@@ -1,0 +1,19 @@
+<ion-header [translucent]="true" class="ion-no-border">
+    <ion-toolbar color="dark">
+        <ion-title>
+            Lista Compra
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<app-listas [terminada]="false"></app-listas>
+
+<ion-content color="dark">
+
+    <!-- fab placed to the top end -->
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button (click)="agregarLista()" color="dark">
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+</ion-content>
